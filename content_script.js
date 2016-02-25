@@ -35,7 +35,7 @@ function downloadFile() {
 					perfObj.duration + "," +
 					perfObj.entryType + "," +
 					perfObj.initiatorType + "," +
-					perfObj.name.replace(",","") + "," +
+					encodeURIComponent(perfObj.name) + "," +
 					perfObj.workerStart + "\r\n"  ;
 
 	}); 
